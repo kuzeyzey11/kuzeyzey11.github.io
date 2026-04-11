@@ -1,1 +1,162 @@
-<h1>Merhaba Dünya</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kuzyy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: #fff; color: #111; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; border-bottom: 0.5px solid #e5e5e5; position: sticky; top: 0; background: #fff; z-index: 10; }
+    nav .logo { font-size: 16px; font-weight: 500; color: #111; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul a { font-size: 14px; color: #666; text-decoration: none; }
+    nav ul a:hover { color: #111; }
+    section { padding: 3rem 2rem; max-width: 700px; margin: 0 auto; }
+    h1 { font-size: 22px; font-weight: 500; margin-bottom: 0.5rem; color: #111; }
+    h2 { font-size: 18px; font-weight: 500; margin-bottom: 1.5rem; color: #111; }
+    p { font-size: 15px; color: #555; line-height: 1.7; }
+    .hero { padding-top: 4rem; }
+    .hero p { margin-top: 0.75rem; max-width: 500px; }
+    .social-links { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .social-links a { font-size: 13px; color: #555; text-decoration: none; padding: 6px 14px; border: 0.5px solid #e5e5e5; border-radius: 8px; }
+    .social-links a:hover { background: #f5f5f5; }
+    .divider { border: none; border-top: 0.5px solid #e5e5e5; max-width: 700px; margin: 0 auto; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .project-card { background: #fff; border: 0.5px solid #e5e5e5; border-radius: 12px; padding: 1rem 1.25rem; }
+    .project-card h3 { font-size: 15px; font-weight: 500; color: #111; margin-bottom: 6px; }
+    .project-card p { font-size: 13px; }
+    .tag { display: inline-block; font-size: 11px; padding: 3px 8px; border-radius: 8px; background: #f5f5f5; color: #555; margin-top: 10px; margin-right: 4px; }
+    .blog-list { display: flex; flex-direction: column; gap: 1rem; }
+    .blog-item { border-bottom: 0.5px solid #e5e5e5; padding-bottom: 1rem; }
+    .blog-item h3 { font-size: 15px; font-weight: 500; color: #111; }
+    .blog-item h3 a { text-decoration: none; color: #111; }
+    .blog-item h3 a:hover { text-decoration: underline; }
+    .blog-item span { font-size: 12px; color: #aaa; }
+    .contact-links { display: flex; flex-direction: column; gap: 10px; margin-top: 1rem; }
+    .contact-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 0.5px solid #e5e5e5; font-size: 14px; }
+    .contact-row span:first-child { color: #666; }
+    .contact-row a { color: #111; text-decoration: none; }
+    .contact-row a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 2rem; font-size: 12px; color: #aaa; border-top: 0.5px solid #e5e5e5; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #111; color: #eee; }
+      nav { background: #111; border-bottom-color: #222; }
+      nav .logo { color: #eee; }
+      nav ul a { color: #999; }
+      nav ul a:hover { color: #eee; }
+      h1, h2 { color: #eee; }
+      p { color: #aaa; }
+      .social-links a { color: #aaa; border-color: #222; }
+      .social-links a:hover { background: #1a1a1a; }
+      .divider { border-top-color: #222; }
+      .project-card { background: #111; border-color: #222; }
+      .project-card h3 { color: #eee; }
+      .tag { background: #1a1a1a; color: #aaa; }
+      .blog-item { border-bottom-color: #222; }
+      .blog-item h3 { color: #eee; }
+      .blog-item h3 a { color: #eee; }
+      .contact-row { border-bottom-color: #222; }
+      .contact-row span:first-child { color: #999; }
+      .contact-row a { color: #eee; }
+      footer { border-top-color: #222; color: #555; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#">kuzyy</a>
+  <ul>
+    <li><a href="#hakkimda">hakkımda</a></li>
+    <li><a href="#projeler">projeler</a></li>
+    <li><a href="#blog">blog</a></li>
+    <li><a href="#iletisim">iletişim</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="hakkimda">
+  <h1>ben kuzey (kuzyy) 👋</h1>
+  <p>yazılım, teknoloji ve internet dünyasıyla ilgilenen biriyim. kendi projelerimi geliştiriyor, öğrendiklerimi burada paylaşıyorum.</p>
+  <div class="social-links">
+    <a href="https://github.com/kuzeyzey11" target="_blank">github</a>
+    <a href="https://twitter.com/turkfidelcastro" target="_blank">twitter / x</a>
+    <a href="https://instagram.com/turkfidelcastro" target="_blank">instagram</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="projeler">
+  <h2>projeler</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>kuzyy.com</h3>
+      <p>kişisel web sitem. github pages ve cloudflare üzerinde çalışıyor.</p>
+      <span class="tag">html</span>
+      <span class="tag">github pages</span>
+    </div>
+    <div class="project-card">
+      <h3>yeni proje</h3>
+      <p>yakında...</p>
+      <span class="tag">?</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="blog">
+  <h2>blog</h2>
+  <div class="blog-list">
+    <div class="blog-item">
+      <h3><a href="https://blog.kuzyy.com" target="_blank">domain ve hosting nasıl kurulur?</a></h3>
+      <span>nisan 2026</span>
+    </div>
+    <div class="blog-item">
+      <h3><a href="https://blog.kuzyy.com" target="_blank">git'e başlangıç rehberi</a></h3>
+      <span>nisan 2026</span>
+    </div>
+    <div class="blog-item">
+      <h3>yakında daha fazlası...</h3>
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="iletisim">
+  <h2>iletişim</h2>
+  <p>benimle iletişime geçmek için:</p>
+  <div class="contact-links">
+    <div class="contact-row">
+      <span>kişisel e-posta</span>
+      <a href="mailto:kuzyy@kuzyy.com">kuzyy@kuzyy.com</a>
+    </div>
+    <div class="contact-row">
+      <span>iş e-posta</span>
+      <a href="mailto:kuzeyzeyneloglu@gmail.com">kuzeyzeyneloglu@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <span>whatsapp</span>
+      <a href="https://wa.me/905343737560" target="_blank">+90 534 373 75 60</a>
+    </div>
+    <div class="contact-row">
+      <span>twitter / x</span>
+      <a href="https://twitter.com/turkfidelcastro" target="_blank">@turkfidelcastro</a>
+    </div>
+    <div class="contact-row">
+      <span>instagram</span>
+      <a href="https://instagram.com/turkfidelcastro" target="_blank">@turkfidelcastro</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 kuzyy — kuzyy.com
+</footer>
+
+</body>
+</html>
